@@ -58,15 +58,6 @@
             ",
         ],
     ];
-
-// var_dump($googleArray);
-
-        foreach ($googleArray as $key => $value) {
-            echo "$key";
-            foreach ($key as $keys => $element) {
-                echo "$element";
-            }
-        };
     ?>
 
 </pre> -->
@@ -77,7 +68,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Google-faq</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -90,7 +81,7 @@
                 <p>Privacy e termini</p>
             </div>
             <div class="menu">
-            <i class="fa-solid fa-grid"></i>
+            <i class="fab fa-thin fa-grid"></i>
             <img src="https://siviaggia.it/wp-content/uploads/sites/2/2020/04/vette-italia.jpg" alt="">
             </div>
         </div>
@@ -108,23 +99,36 @@
 
     <main>
         <div class="container">
+            <h1>
 
+                <?php
+
+                foreach ($googleArray as $key => $valore) {
+                        echo "<h2>$valore[domanda]</h2><br><p>$valore[risposta]<p><br>";
+                }
+                ?>
+
+            </h1>
         </div>
     </main>
 
     <footer>
         <div class="container-footer">
-            <nav class="menu-footer">
-                <ul>
-                    <li>Google</li>
-                    <li>Tutto su Google</li>
-                    <li>Privacy</li>
-                    <li>Termini</li>
-                </ul>
-            </nav>
-            <div class="lingua">
-                <img src="" alt="">
-                <button></button>
+            <div class="container-footer-menu">
+                <nav class="menu-footer">
+                    <ul class="lista-footer">
+                        <li>Google</li>
+                        <li>Tutto su Google</li>
+                        <li>Privacy</li>
+                        <li>Termini</li>
+                    </ul>
+                </nav>
+                <div class="lingua">
+                    <i class="fas fa-solid fa-earth-europe"></i>
+                    <button>Italiano
+                        <i class="fa fa-duotone fa-angle-down"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </footer>

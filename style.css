@@ -32,9 +32,12 @@
 }
 
 .capitoli{
+    padding:0 0 10px 10px;
+}
+
+.capitoli, .lista-footer{
     display: flex;
     list-style-type: none;
-    padding:0 0 10px 10px;
 }
 
 li{
@@ -46,11 +49,33 @@ li{
 }
 
 .container{
-    width: 70%;
+    padding: 50px 0;
+}
+
+.container, .container-footer-menu{
+    width: 60%;
     margin: 0 auto;
-    padding: 20px 0;
 }
 
 .container-footer{
     background-color: rgb(190, 190, 190);
+}
+
+.container-footer-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+button{
+    padding: 3px 100px 3px 8px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+}
+
+.fa-angle-down{
+    position: absolute;
+    right: 10px;
 }
